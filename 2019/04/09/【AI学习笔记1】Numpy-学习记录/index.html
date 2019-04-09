@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Macix">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="【AI学习笔记1】Numpy 学习记录">
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="Macix&#39;s Awesome Site">
+  <!--Type page-->
+  
+      <meta property="og:type" content="article">
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>【AI学习笔记1】Numpy 学习记录 - Macix&#39;s Awesome Site</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="/images/M.svg" alt="Macix's Awesome Site" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  archive
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  about
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            【AI学习笔记1】Numpy 学习记录
+            
+          </h1>
+          <p class="posted-on">
+          2019-04-09
+          </p>
+          <div class="tags-links">
+            
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <ul>
+<li><p>导入matplotlib 并 在线绘图</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> mathplotlib.pyplot <span class="keyword">as</span> plot</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">%matplotlib online <span class="comment">## 在线绘图</span></span><br></pre></td></tr></table></figure>
+<h3 id="numpy"><a href="#numpy" class="headerlink" title="numpy"></a>numpy</h3></li>
+<li><p>numpy库的常用函数</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 数学函数</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">np.sin() <span class="comment">#计算矩阵每个值 的sin,并返回，矩阵的shape 不变</span></span><br><span class="line">np.cos() <span class="comment">#类似sin</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成常用array</span></span><br><span class="line">np.repeat(<span class="number">1</span>, <span class="number">10</span>) <span class="comment"># 产生有10个1 的 array</span></span><br><span class="line">np.arange() <span class="comment">#产生一个 行数为 n 的array, 可以设置起始和结束以及步长</span></span><br><span class="line">np.arange() <span class="comment"># 生成按顺序的1行矩阵</span></span><br><span class="line">np.eye() <span class="comment">#生成单位阵</span></span><br><span class="line">np.empty()<span class="comment">#创建一个空阵</span></span><br><span class="line">np.diag([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]) <span class="comment">#从一个一维矩阵创建一个对角阵, 对角线上为 1,2,3</span></span><br><span class="line">np.linespace(<span class="number">0</span>, <span class="number">2</span>*np.pi,<span class="number">100</span>)  <span class="comment">#创建在一个范围内均分的矩阵,在 0 到 2pi 范围内均匀取 100个点</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ndarray对象常用操作方法</p>
+<p>  ndarray是 numpy 返回的 用于表示矩阵的对象，但其实是数组</p>
+<p>  numpy提供专有的matrix 对象，matrix 可以 求 逆矩阵，共轭矩阵，</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">arr = np.arange(<span class="number">100</span>) <span class="comment">#构造一个 1 行 100 列的矩阵，从 0 到 100</span></span><br><span class="line">arr.resharp(<span class="number">2</span>, <span class="number">50</span>) <span class="comment">#将 arr 变换成 2 行 50 列的矩阵,当已经指定行时 列的值可以设置为-1，这样会自动计算需要的列数</span></span><br><span class="line">arr.shape <span class="comment">#arr 的形状</span></span><br><span class="line">arr.size  <span class="comment">#arr 所占用的空间</span></span><br><span class="line">arr.dtype <span class="comment">#arr 的数据类型 </span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 数据类型转换 不能直接修改 dtype , dtype 只是一个标记 表明以何种类型显示内存中的数据</span></span><br><span class="line"><span class="comment"># 比如 float32 类型的转换为 int8 后 size会增加4倍</span></span><br><span class="line">arr.astype(np.float32)<span class="comment">#arr 的数据类型转换为 float32</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 转换成矩阵</span></span><br><span class="line">mat = np.asmatrix(arr)</span><br><span class="line">arr.T <span class="comment">#取转置，</span></span><br><span class="line"><span class="comment">#</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>numpy 的 matrix对象操作</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mat = np.matrix(<span class="string">'1,2,3;1,2,3'</span>) <span class="comment">#从字符串创建一个矩阵</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">输出, 2行3列的矩阵</span></span><br><span class="line"><span class="string">matrix([[1, 2, 3],</span></span><br><span class="line"><span class="string">        [1, 2, 3]])</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">mat.I <span class="comment">#矩阵的逆阵</span></span><br><span class="line">mat.H <span class="comment">#矩阵的共轭</span></span><br><span class="line">mat.T <span class="comment">#矩阵的转置</span></span><br><span class="line"><span class="comment"># 矩阵的算术操作</span></span><br><span class="line"><span class="comment"># + - * </span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 矩阵转换为数组</span></span><br><span class="line">arr = np.asarray(mat)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+      
+        <div class="nav-next">
+          <a href="/2019/04/09/test/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">关于本站</h1>
+        <div class="custom-widget-content">
+          
+          <p align="center">Recording my Coding life.</p>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/MeLifesoftware" class="icon icon-github" target="_blank">github</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onsubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>Macix's Awesome Site &copy; 2019</span>
+    
+      <span class="split">|</span>
+      <span></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>
