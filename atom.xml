@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://melifesoftware.github.io/"/>
-  <updated>2019-04-11T13:36:01.047Z</updated>
+  <updated>2019-04-11T14:19:16.590Z</updated>
   <id>http://melifesoftware.github.io/</id>
   
   <author>
@@ -21,9 +21,17 @@
     <link href="http://melifesoftware.github.io/2019/04/11/%E3%80%90%E8%80%83%E7%A0%94%E3%80%91%E4%B8%80%E6%AC%A1%E6%80%BB%E7%BB%93/"/>
     <id>http://melifesoftware.github.io/2019/04/11/【考研】一次总结/</id>
     <published>2019-04-11T13:29:18.000Z</published>
-    <updated>2019-04-11T13:36:01.047Z</updated>
+    <updated>2019-04-11T14:19:16.590Z</updated>
+    
+    <content type="html"><![CDATA[<p>准备考研也有段时间了，昨天的周测搞得我心态有点爆炸，同时暴露出自己的很多问题，尤其是做题方面还有基础概念的理解，以及对时间分配等方面，这些问题也是我高中成绩始终无法提高的根本问题，下面针对这段时间暴露出的问题做个小总结，并针对这些问题。</p><h4 id="暴露出的问题"><a href="#暴露出的问题" class="headerlink" title="暴露出的问题"></a>暴露出的问题</h4><ol><li>做题太过功利化，为了做题而做题，有对作业的修正，但没有针对题型做出总结，导致连一些基础的题型的解题步骤在考试的时候都没有想到。</li><li>没有好好利用笔记和讲义，对笔记上例题，只知道一个大概，没有真正自己做过，老师讲过觉得自己听懂了</li><li><strong>没有及时复习</strong>，这个是最大的问题，不管是做题还是听课，课后根本没有花过任何时间去复习，去总结，总是以为自己在做题，做题做的完全没有达到预想的效果，一些基础的套路题型没有总结过解题步骤，就算总结了也没有主动地去翻看过，导致考试的时候处于记得某一个步骤，但关键步骤忘记了的尴尬境地。</li></ol><h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><ol><li><p>每周的<strong>周五-周六</strong>两天时间定为每周的总结时间，需要完成以下任务</p><ul><li><p>将本周所作的练习题中包括周测、课后习题 的错误的题，不会做的题重新做一遍</p><p>  <code>不会做的题指想了很久都不会做的，很久指思考8分钟以上毫无思路的题，或者有思路但解题时间超过20分钟的题</code></p></li><li><p>将本周复习的内容对应的讲义章节上的习题全部自己做一遍</p></li><li><p>建立一个套路笔记本呢，将当周复习完的章节的题目进行总结，将套路，规律，写到套路笔记本上</p></li><li><p>将当周复习章节的公式定理，知识体系进行整理，做到在不看书的情况下可以将本周复习章节的知识点进行罗列，包括<strong>公式、定理、公式推导</strong>，定理的推导现阶段不要求</p></li></ul></li><li><p>花时间复习之前的总结笔记，包括错题本，讲义上的题，看题目想思路，思路不清晰的动手重新演算一遍，并记录到套路笔记本里。如果反复出现还是没有思路，则在套路笔记本上专门进行标注</p></li><li><p><strong>不要拖延，不要颓废，让生活规律起来</strong>，每天十二点之前一定上床，起床时间定为早上七点，前后自由时间不能超过15分钟</p></li></ol><blockquote><p><strong>行动至上，理性为王</strong>。</p></blockquote>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;准备考研也有段时间了，昨天的周测搞得我心态有点爆炸，同时暴露出自己的很多问题，尤其是做题方面还有基础概念的理解，以及对时间分配等方面，这些问题也是我高中成绩始终无法提高的根本问题，下面针对这段时间暴露出的问题做个小总结，并针对这些问题。&lt;/p&gt;
+&lt;h4 id=&quot;暴露出的问题
+      
     
     </summary>
     
@@ -87,7 +95,7 @@
     <published>2019-04-09T08:20:23.000Z</published>
     <updated>2019-04-09T08:22:13.355Z</updated>
     
-    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Welcome to my blog, enter password to read." />    <label for="pass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19SsxYGtp0rjG+mEyM8F0pMI4d83K7FVd87HzmEd1h/MKz5Kv1XunE2FG704/nOZylrpr7hUHtKXQYKqaI8Lu8iwumsNte33Xt/3BoD458NaA3Zi3nCixcy3DdqJ3VPFnV/LWAwRx6tCwNOvoSwuJ1HZhBSg6BgdaouU4b1kWRrJMG0UjBi8nJ2RzlSonb9iFL8ZxfWQdP9nT9JQS+NXJvx+Tza5c19xRm1Slm9viGIyqEoZktSRalhyym+ZdlcF72VdToePwzAAmAXI+isDgnLqbQVBaOeX5vpqwJbveX0kTJYp1I80lbS</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Welcome to my blog, enter password to read." />    <label for="pass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/UPJEVOWGI3SqnarHWB41YJ7ISxTtJSqNTU9s2ZZoyGMdziUgVwtlGY1vKid0kSWeqWRdHAfdYGjpaG5IVH/tpRLuTahUS60Nb4WpqkHjuZxuqApf23QigNfYU4uMu93bU0zBEnPqVfbTmDL3EePrjuYpGlMRcC5QAu9o9fLY9Ectmhi3ydcHtDnxlYJVRbXTQsEMh42DKXdsdeyR05Xg+/KpDfG+utLD9Ungo+OWR7pqezfgm0V2pZ5Fec1o8aVmATFVcazWgdveacw13iQ2thErZSf/qCFW6Te/v76irdJRU0vnPmdnl</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     

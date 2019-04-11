@@ -177,7 +177,7 @@
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-U2FsdGVkX19SsxYGtp0rjG+mEyM8F0pMI4d83K7FVd87HzmEd1h/MKz5Kv1XunE2FG704/nOZylrpr7hUHtKXQYKqaI8Lu8iwumsNte33Xt/3BoD458NaA3Zi3nCixcy3DdqJ3VPFnV/LWAwRx6tCwNOvoSwuJ1HZhBSg6BgdaouU4b1kWRrJMG0UjBi8nJ2RzlSonb9iFL8ZxfWQdP9nT9JQS+NXJvx+Tza5c19xRm1Slm9viGIyqEoZktSRalhyym+ZdlcF72VdToePwzAAmAXI+isDgnLqbQVBaOeX5vpqwJbveX0kTJYp1I80lbS
+U2FsdGVkX1/UPJEVOWGI3SqnarHWB41YJ7ISxTtJSqNTU9s2ZZoyGMdziUgVwtlGY1vKid0kSWeqWRdHAfdYGjpaG5IVH/tpRLuTahUS60Nb4WpqkHjuZxuqApf23QigNfYU4uMu93bU0zBEnPqVfbTmDL3EePrjuYpGlMRcC5QAu9o9fLY9Ectmhi3ydcHtDnxlYJVRbXTQsEMh42DKXdsdeyR05Xg+/KpDfG+utLD9Ungo+OWR7pqezfgm0V2pZ5Fec1o8aVmATFVcazWgdveacw13iQ2thErZSf/qCFW6Te/v76irdJRU0vnPmdnl
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
         </div>
@@ -327,10 +327,10 @@ var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = 'false';
+            document.title = '快回来啊！！！';
             clearTimeout(titleTime);
         } else {
-            document.title = 'false';
+            document.title = '';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
