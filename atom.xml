@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Macix&#39;s Awesome Site</title>
+  
+  <subtitle>Nothing</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://melifesoftware.github.io/"/>
+  <updated>2019-04-09T09:49:14.314Z</updated>
+  <id>http://melifesoftware.github.io/</id>
+  
+  <author>
+    <name>Macix</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【AI学习笔记1】Numpy 学习记录</title>
+    <link href="http://melifesoftware.github.io/2019/04/09/%E3%80%90AI%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01%E3%80%91Numpy-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    <id>http://melifesoftware.github.io/2019/04/09/【AI学习笔记1】Numpy-学习记录/</id>
+    <published>2019-04-09T09:12:06.000Z</published>
+    <updated>2019-04-09T09:49:14.314Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>导入matplotlib 并 在线绘图</p>  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> mathplotlib.pyplot <span class="keyword">as</span> plot</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">%matplotlib online <span class="comment">## 在线绘图</span></span><br></pre></td></tr></table></figure><h3 id="numpy"><a href="#numpy" class="headerlink" title="numpy"></a>numpy</h3></li><li><p>numpy库的常用函数</p>  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 数学函数</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">np.sin() <span class="comment">#计算矩阵每个值 的sin,并返回，矩阵的shape 不变</span></span><br><span class="line">np.cos() <span class="comment">#类似sin</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成常用array</span></span><br><span class="line">np.repeat(<span class="number">1</span>, <span class="number">10</span>) <span class="comment"># 产生有10个1 的 array</span></span><br><span class="line">np.arange() <span class="comment">#产生一个 行数为 n 的array, 可以设置起始和结束以及步长</span></span><br><span class="line">np.arange() <span class="comment"># 生成按顺序的1行矩阵</span></span><br><span class="line">np.eye() <span class="comment">#生成单位阵</span></span><br><span class="line">np.empty()<span class="comment">#创建一个空阵</span></span><br><span class="line">np.diag([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]) <span class="comment">#从一个一维矩阵创建一个对角阵, 对角线上为 1,2,3</span></span><br><span class="line">np.linespace(<span class="number">0</span>, <span class="number">2</span>*np.pi,<span class="number">100</span>)  <span class="comment">#创建在一个范围内均分的矩阵,在 0 到 2pi 范围内均匀取 100个点</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#</span></span><br></pre></td></tr></table></figure></li><li><p>ndarray对象常用操作方法</p><p>  ndarray是 numpy 返回的 用于表示矩阵的对象，但其实是数组</p><p>  numpy提供专有的matrix 对象，matrix 可以 求 逆矩阵，共轭矩阵，</p>  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">arr = np.arange(<span class="number">100</span>) <span class="comment">#构造一个 1 行 100 列的矩阵，从 0 到 100</span></span><br><span class="line">arr.resharp(<span class="number">2</span>, <span class="number">50</span>) <span class="comment">#将 arr 变换成 2 行 50 列的矩阵,当已经指定行时 列的值可以设置为-1，这样会自动计算需要的列数</span></span><br><span class="line">arr.shape <span class="comment">#arr 的形状</span></span><br><span class="line">arr.size  <span class="comment">#arr 所占用的空间</span></span><br><span class="line">arr.dtype <span class="comment">#arr 的数据类型 </span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 数据类型转换 不能直接修改 dtype , dtype 只是一个标记 表明以何种类型显示内存中的数据</span></span><br><span class="line"><span class="comment"># 比如 float32 类型的转换为 int8 后 size会增加4倍</span></span><br><span class="line">arr.astype(np.float32)<span class="comment">#arr 的数据类型转换为 float32</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 转换成矩阵</span></span><br><span class="line">mat = np.asmatrix(arr)</span><br><span class="line">arr.T <span class="comment">#取转置，</span></span><br><span class="line"><span class="comment">#</span></span><br></pre></td></tr></table></figure></li><li><p>numpy 的 matrix对象操作</p>  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mat = np.matrix(<span class="string">'1,2,3;1,2,3'</span>) <span class="comment">#从字符串创建一个矩阵</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">输出, 2行3列的矩阵</span></span><br><span class="line"><span class="string">matrix([[1, 2, 3],</span></span><br><span class="line"><span class="string">        [1, 2, 3]])</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">mat.I <span class="comment">#矩阵的逆阵</span></span><br><span class="line">mat.H <span class="comment">#矩阵的共轭</span></span><br><span class="line">mat.T <span class="comment">#矩阵的转置</span></span><br><span class="line"><span class="comment"># 矩阵的算术操作</span></span><br><span class="line"><span class="comment"># + - * </span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 矩阵转换为数组</span></span><br><span class="line">arr = np.asarray(mat)</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;导入matplotlib 并 在线绘图&lt;/p&gt;
+  &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;sp
+      
+    
+    </summary>
+    
+    
+      <category term="DL" scheme="http://melifesoftware.github.io/tags/DL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://melifesoftware.github.io/2019/04/09/test/"/>
+    <id>http://melifesoftware.github.io/2019/04/09/test/</id>
+    <published>2019-04-09T08:20:23.000Z</published>
+    <updated>2019-04-09T08:22:13.355Z</updated>
+    
+    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Welcome to my blog, enter password to read." />    <label for="pass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/FG7ReuQyjAL2ZUk3r4OqaIwBGrclyWOCaX4B/8hdEVFFs5ng4umEhAzqWhaKrN+ILabqusm+YO/TmFBL4/Vlp3rbMww6gFlemYgwt9fZCNz3WoKEeJ3G/wKa8F4qz9STh+REtTRPrYkCUO2vBDqXJrvyMzetb4Gq3KPDeavA0gBgyyjpmc75xxP8YNafIt4diwY2K6vmqDWCa028BMO3465m0rlgDvwejNJjaebKaysHyktLKiMxguFCy6yE9Yk5pNEMQOAw8myihlbsrkdIBCFKKlHBHFhIabMqpRFagLxTw6nb2ijXJ</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    
+    <summary type="html">
+    
+      Welcome to my blog, enter password to read.
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>post title</title>
+    <link href="http://melifesoftware.github.io/2019/04/09/post-title/"/>
+    <id>http://melifesoftware.github.io/2019/04/09/post-title/</id>
+    <published>2019-04-08T16:35:55.000Z</published>
+    <updated>2019-04-08T16:38:29.990Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="hello"><a href="#hello" class="headerlink" title="hello"></a>hello</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;hello&quot;&gt;&lt;a href=&quot;#hello&quot; class=&quot;headerlink&quot; title=&quot;hello&quot;&gt;&lt;/a&gt;hello&lt;/h3&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://melifesoftware.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://melifesoftware.github.io/2019/04/09/hello-world/"/>
+    <id>http://melifesoftware.github.io/2019/04/09/hello-world/</id>
+    <published>2019-04-08T16:32:03.795Z</published>
+    <updated>2019-04-08T16:32:03.795Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
