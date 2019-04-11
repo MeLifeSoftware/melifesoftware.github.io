@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Macix&#39;s Awesome Site</title>
   
-  <subtitle>Nothing</subtitle>
+  <subtitle>Be You want to be.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://melifesoftware.github.io/"/>
-  <updated>2019-04-09T09:49:14.314Z</updated>
+  <updated>2019-04-11T13:36:01.047Z</updated>
   <id>http://melifesoftware.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【考研】一次总结</title>
+    <link href="http://melifesoftware.github.io/2019/04/11/%E3%80%90%E8%80%83%E7%A0%94%E3%80%91%E4%B8%80%E6%AC%A1%E6%80%BB%E7%BB%93/"/>
+    <id>http://melifesoftware.github.io/2019/04/11/【考研】一次总结/</id>
+    <published>2019-04-11T13:29:18.000Z</published>
+    <updated>2019-04-11T13:36:01.047Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="考研" scheme="http://melifesoftware.github.io/tags/%E8%80%83%E7%A0%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【AI学习笔记2】matplotlib学习记录</title>
+    <link href="http://melifesoftware.github.io/2019/04/11/%E3%80%90AI%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02%E3%80%91matplotlib%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    <id>http://melifesoftware.github.io/2019/04/11/【AI学习笔记2】matplotlib学习记录/</id>
+    <published>2019-04-11T02:49:35.000Z</published>
+    <updated>2019-04-11T03:26:07.535Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h3><p>一图胜千言，有了数据处理工具，一个好的<strong>数据可视化</strong>的工具也是必不可少的。</p><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>Matplotlib是一个Python 2D绘图库，可以生成各种硬拷贝格式和跨平台交互式环境的<strong>出版物质量</strong>数据。Matplotlib可用于Python脚本，Python和IPython shell，Jupyter笔记本，Web应用程序服务器和四个图形用户界面工具包。</p><h4 id="导入代码"><a href="#导入代码" class="headerlink" title="导入代码"></a>导入代码</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">%matplotlib inline</span><br></pre></td></tr></table></figure><h4 id="一张图的构成部分"><a href="#一张图的构成部分" class="headerlink" title="一张图的构成部分"></a>一张图的构成部分</h4><p>抄一张官网的图</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://www.matplotlib.org.cn/static/images/tutorials/anatomy.png" alt="一张图的构成部分" title>                </div>                <div class="image-caption">一张图的构成部分</div>            </figure><h4 id="绘图入门"><a href="#绘图入门" class="headerlink" title="绘图入门"></a>绘图入门</h4><ul><li>绘图分为交互模式和非交互模式</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plt.ion() <span class="comment"># 交互模式绘图, 适用于 jupyter模式下 绘图</span></span><br><span class="line">plt.ioff() <span class="comment"># 关闭交互模式</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 大部分的 绘图需要指定 x,y 坐标点集</span></span><br><span class="line">x = np.linspace(<span class="number">0</span>,<span class="number">100</span>,<span class="number">100</span>) <span class="comment"># 生成一些点</span></span><br><span class="line">y = x ** <span class="number">2</span></span><br><span class="line">plt.title(<span class="string">'test'</span>) <span class="comment"># 指定当前绘图的标题</span></span><br><span class="line">plt.plot(x, y, label=<span class="string">'legend title'</span>) <span class="comment"># 绘图并设置图例标题</span></span><br><span class="line">plt.legend() <span class="comment"># 开启显示图例</span></span><br><span class="line">plt.grid() <span class="comment"># 显示坐标轴网格</span></span><br><span class="line">plt.show() <span class="comment"># 显示图像</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果只是yi'wei</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Matplotlib&quot;&gt;&lt;a href=&quot;#Matplotlib&quot; class=&quot;headerlink&quot; title=&quot;Matplotlib&quot;&gt;&lt;/a&gt;Matplotlib&lt;/h3&gt;&lt;p&gt;一图胜千言，有了数据处理工具，一个好的&lt;strong&gt;数据可视化&lt;/stro
+      
+    
+    </summary>
+    
+    
+      <category term="DL" scheme="http://melifesoftware.github.io/tags/DL/"/>
+    
+  </entry>
   
   <entry>
     <title>【AI学习笔记1】Numpy 学习记录</title>
@@ -48,7 +87,7 @@
     <published>2019-04-09T08:20:23.000Z</published>
     <updated>2019-04-09T08:22:13.355Z</updated>
     
-    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Welcome to my blog, enter password to read." />    <label for="pass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/FG7ReuQyjAL2ZUk3r4OqaIwBGrclyWOCaX4B/8hdEVFFs5ng4umEhAzqWhaKrN+ILabqusm+YO/TmFBL4/Vlp3rbMww6gFlemYgwt9fZCNz3WoKEeJ3G/wKa8F4qz9STh+REtTRPrYkCUO2vBDqXJrvyMzetb4Gq3KPDeavA0gBgyyjpmc75xxP8YNafIt4diwY2K6vmqDWCa028BMO3465m0rlgDvwejNJjaebKaysHyktLKiMxguFCy6yE9Yk5pNEMQOAw8myihlbsrkdIBCFKKlHBHFhIabMqpRFagLxTw6nb2ijXJ</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Welcome to my blog, enter password to read." />    <label for="pass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19SsxYGtp0rjG+mEyM8F0pMI4d83K7FVd87HzmEd1h/MKz5Kv1XunE2FG704/nOZylrpr7hUHtKXQYKqaI8Lu8iwumsNte33Xt/3BoD458NaA3Zi3nCixcy3DdqJ3VPFnV/LWAwRx6tCwNOvoSwuJ1HZhBSg6BgdaouU4b1kWRrJMG0UjBi8nJ2RzlSonb9iFL8ZxfWQdP9nT9JQS+NXJvx+Tza5c19xRm1Slm9viGIyqEoZktSRalhyym+ZdlcF72VdToePwzAAmAXI+isDgnLqbQVBaOeX5vpqwJbveX0kTJYp1I80lbS</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -87,7 +126,7 @@
     <link href="http://melifesoftware.github.io/2019/04/09/hello-world/"/>
     <id>http://melifesoftware.github.io/2019/04/09/hello-world/</id>
     <published>2019-04-08T16:32:03.795Z</published>
-    <updated>2019-04-08T16:32:03.795Z</updated>
+    <updated>2019-04-11T12:07:43.209Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
